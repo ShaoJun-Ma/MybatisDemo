@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace:命名空间，其值为某个dao层类的具体路径
+-->
+<mapper namespace="demo01.TestDemo">
+    <!--sql语句保存在Mybaties的局部配置文件-->
+    <!--
+        select标签存放查询语句
+        id：在整个配置文件中的id值必须唯一，其值为方法名
+        resultType:指定当前sql查询语句返回的数据类型，类型是某一天数据的类型
+    -->
+    <select id="findAll" resultType="demo01.User">
+        SELECT * FROM user
+    </select>
+
+</mapper>
