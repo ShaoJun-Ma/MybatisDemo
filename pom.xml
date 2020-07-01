@@ -11,7 +11,7 @@
     <!--项目需要的包，同时定义一下版本号-->
     <properties>
         <mybatis.version>3.4.1</mybatis.version>
-        <mysql.version>5.1.38</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
     </properties>
 
     <dependencies>
